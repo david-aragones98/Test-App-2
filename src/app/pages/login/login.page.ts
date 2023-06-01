@@ -16,7 +16,9 @@ export class LoginPage implements OnInit {
   goToGame() {
     this.router.navigate(['game']);
   }
-
+  goToStartMenu() {
+    this.router.navigate(['start-menu']);
+  }
 
   ngOnInit() {
   }
