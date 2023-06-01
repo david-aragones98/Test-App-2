@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'start-menu',
     loadChildren: () => import('./pages/start-menu/start-menu.module').then( m => m.StartMenuPageModule)
+  },
+  {
+    path: 'api-page1',
+    loadChildren: () => import('./pages/api-page1/api-page1.module').then( m => m.ApiPage1PageModule)
   }
 ];
 

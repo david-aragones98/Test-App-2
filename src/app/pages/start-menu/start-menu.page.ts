@@ -17,7 +17,7 @@ export class StartMenuPage implements OnInit {
     this.router.navigate(['game']);
   }
   goToApiRest() {
-    this.router.navigate(['']);
+    this.router.navigate(['api-page1']);
   }
 
   ngOnInit() {
