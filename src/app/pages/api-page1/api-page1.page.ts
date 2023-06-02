@@ -12,12 +12,22 @@ export class ApiPage1Page implements OnInit {
 
   //Inizializar esta cosa vacia o da error por no inizializar con un valor
   images: any[] = [];
+  page = 1;
+  limit = 10;
 
   constructor(private dataService: DataService,private router: Router) {}
 
   ngOnInit() {
-    this.dataService.getImages().subscribe((data) => {
-      this.images = data;
+    this.loadImages();
+  }
+
+  loadImages(event?: any) {
+    this.dataService.getImages(this.page, this.limit).subscribe((data) => {
+      this.images = this.images.concat(data);
+      this.page++;
+      if (event) {
+        event.target.complete();
+      }
     });
   }
 

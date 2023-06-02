@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'api-page1',
     loadChildren: () => import('./pages/api-page1/api-page1.module').then( m => m.ApiPage1PageModule)
+  },
+  {
+    path: 'grid1',
+    loadChildren: () => import('./pages/grid1/grid1.module').then( m => m.Grid1PageModule)
   }
 ];
 

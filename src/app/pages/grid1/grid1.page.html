@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToStartMenu()" fill="outline" color="primary" >
+        <ion-icon name="newspaper-outline"></ion-icon>
+        Menu
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="header-title">Grid de Imagenes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let image of images">
+        <img src="{{ image.url }}" alt="Image" class="image-item">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Sistema antiguo
+  <ion-infinite-scroll (ionInfinite)="onScroll($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more images..."
+    ></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+  -->
+  
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="onScroll($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more images..."
+      *ngIf="!isLoading && hasMoreData"
+    ></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

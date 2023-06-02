@@ -10,16 +10,24 @@ export class DataService {
 
   constructor(private http: HttpClient) {}
 
-    //Version para limitarlo a las 10 primeras entrys
+/*    //Version para limitarlo a las 10 primeras entrys
   getImages() {
     return this.http.get<any[]>(this.apiUrl).pipe(
       map((data: any[]) => data.slice(0, 10))
     );
   }
-  
+  */
  /*
   getImages() {
     return this.http.get<any[]>(this.apiUrl);
   }
   */
+
+  getImages(page: number, limit: number) {
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + limit;
+  
+    return this.http.get<any[]>(`${this.apiUrl}?_start=${startIndex}&_end=${endIndex}`);
+  }
+  
 }

@@ -19,6 +19,9 @@ export class StartMenuPage implements OnInit {
   goToApiRest() {
     this.router.navigate(['api-page1']);
   }
+  goToGrid1() {
+    this.router.navigate(['grid1']);
+  }
 
   ngOnInit() {
   }
