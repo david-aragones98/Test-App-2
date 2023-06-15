@@ -1,13 +1,67 @@
 <ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons (click)="goToLogin()" slot="start">
+        <ion-button fill="outline" color="primary">
+          <ion-icon name="newspaper-outline"></ion-icon>
+          Menu
+        </ion-button>
+        <ion-title class="ion-text-center">Nombre Usuario</ion-title>
+      </ion-buttons>
+
+      <ion-button>
+        <ion-icon slot="icon-only" name="notifications"></ion-icon>
+        <ion-badge color="danger">3</ion-badge>
+      </ion-button>
+    </ion-toolbar>
+  </ion-header>
   <ion-list>
-  <ion-card>
+    <ion-card>
+      <img
+        alt="Galleria de chicas/Ultima Chica conseguida"
+        src="https://i0.wp.com/news.qoo-app.com/en/wp-content/uploads/sites/3/2022/01/maxresdefault-1.jpeg?resize=900%2C506&ssl=1"
+      />
+      <ion-card-header>
+        <ion-button (click)="goToGrid1()" expand="full">GALLERY</ion-button>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <img
+        alt="Tienda/Progreso paa el siguiente pack gratis"
+        src="https://dplnews.com/wp-content/uploads/2020/03/dplnews_lootboxes-espa%C3%B1a_vr020320.jpg"
+      />
+      <ion-card-header>
+        <ion-button (click)="goToGrid1()" expand="full">HAREM SHOP</ion-button>
+      </ion-card-header>
+      <ion-title>NEXT CHEST: IVORY TREASURE</ion-title>
+      <ion-progress-bar
+        value="0.7"
+        color="danger"
+        mode="determinate"
+        buffer-value="0.9"
+        reverse
+      ></ion-progress-bar>
+    </ion-card>
+
+    <ion-card>
+      <img
+        alt="Foto generica de juego"
+        src="https://www.coolmathgames.com/sites/default/files/Snake%20OG%20Image.png"
+      />
+      <ion-card-header>
+        <ion-button (click)="goToGame()" expand="full"
+          >Jugar a Snake</ion-button
+        >
+      </ion-card-header>
+    </ion-card>
+
+    <!-- <ion-card>
     <img alt="Foto generica de juego" src="https://www.coolmathgames.com/sites/default/files/Snake%20OG%20Image.png" />
     <ion-card-header>
       <ion-button (click)="goToGame()" expand="full">Jugar a Snake</ion-button>
     </ion-card-header>  
   </ion-card>
 
-  <!-- Este boton ahora mismo te lleva a la pantalla de carga inicial -->
   <ion-card> 
     <img alt="Foto generica de la API" src="https://apilist.fun/images/social/api/jsonplaceholder.png" />
     <ion-card-header>
@@ -28,6 +82,6 @@
       <ion-button (click)="goToGrid1()" expand="full">Ir al Grid 1</ion-button>
     </ion-card-header>  
   </ion-card>
-
-  </ion-list>
-</ion-content>..
+  -->
+  </ion-list> </ion-content
+>..

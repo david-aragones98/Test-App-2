@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'grid1',
     loadChildren: () => import('./pages/grid1/grid1.module').then( m => m.Grid1PageModule)
+  },
+  {
+    path: 'detail-girl',
+    loadChildren: () => import('./pages/detail-girl/detail-girl.module').then( m => m.DetailGirlPageModule)
   }
 ];
 

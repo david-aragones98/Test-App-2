@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { DataService } from 'src/app/services/data.service';
 
+
+
 @Component({
   selector: 'app-grid1',
   templateUrl: './grid1.page.html',
@@ -63,5 +65,10 @@ export class Grid1Page implements OnInit {
 
   goToStartMenu() {
     this.router.navigate(['start-menu']);
+  }
+
+  //Con esta funcion a veces da error porque salta a la pagina de detalles antes de recoger la info de la imagen en cuestion
+  openImageDetail(image: any) {
+    this.router.navigate(['/detail-girl'], { state: { image } });
   }
 }
