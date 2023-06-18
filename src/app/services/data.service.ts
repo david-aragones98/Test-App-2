@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -23,7 +23,7 @@ export class DataService {
   }
   */
 
-  getImages(page: number, limit: number) {
+  getImages(page: number, limit: number): Observable<any> {
     const startIndex = (page - 1) * limit;
     const endIndex = startIndex + limit;
   

@@ -13,8 +13,8 @@
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col size="6" *ngFor="let image of images" (click)="openImageDetail(image)">
-        <img src="{{ image.url }}" alt="Image" class="image-item">
+      <ion-col size="6" *ngFor="let image of imagesArray" (click)="openImageDetail(image)">
+        <img src="{{ image.data }}" alt="Image" class="image-item">
       </ion-col>
     </ion-row>
   </ion-grid>
