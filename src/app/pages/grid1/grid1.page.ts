@@ -19,7 +19,9 @@ export class Grid1Page implements OnInit {
 
   constructor(
     private _testGallerySrv: TestGalleryService, 
-    private router: Router) {}
+    private router: Router
+    
+    ) {}
 
   ngOnInit() {
    // this.loadImages();
