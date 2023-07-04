@@ -6,10 +6,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production --source-map",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "lab": "ionic serve --lab"
   },
   "private": true,
   "dependencies": {
@@ -45,6 +46,7 @@
     "@angular/language-service": "^16.0.0",
     "@capacitor/cli": "5.0.4",
     "@ionic/angular-toolkit": "^9.0.0",
+    "@ionic/lab": "3.2.15",
     "@types/jasmine": "~4.3.0",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.3.0",

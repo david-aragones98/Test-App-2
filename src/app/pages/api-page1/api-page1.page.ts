@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { DataService } from 'src/app/services/data.service';
+import { DataService } from 'src/app/common-services/data.service';
 
 @Component({
   selector: 'app-api-page1',
@@ -22,7 +22,7 @@ export class ApiPage1Page implements OnInit {
   }
 
   loadImages(event?: any) {
-    this.dataService.getImages(this.page, this.limit).subscribe((data) => {
+    this.dataService.getImages(this.page, this.limit).subscribe((data: any) => {
       this.images = this.images.concat(data);
       this.page++;
       if (event) {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { DataService } from 'src/app/services/data.service';
+import { DataService } from 'src/app/common-services/data.service';
 
 
 @Component({
