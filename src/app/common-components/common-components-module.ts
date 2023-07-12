@@ -5,6 +5,7 @@ import { GoBackComponent } from './go-back/go-back.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ButtonComponent } from './button/button.component';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,6 @@ import { ButtonComponent } from './button/button.component';
     FooterComponent,
     ButtonComponent
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, IonicModule],
 })
 export class CommonComponentsModule {}
