@@ -16,10 +16,8 @@ export class LoginPage implements OnInit {
   goToRegistry() {
     this.router.navigate(['registry']);
   }
-  goToGame() {
-    this.router.navigate(['game']);
-  }
   goToStartMenu() {
+  
     this.router.navigate(['start-menu']);
   }
 

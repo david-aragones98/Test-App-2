@@ -16,21 +16,28 @@ const routes: Routes = [
     path: 'registry',
     loadChildren: () => import('./pages/registry/registry.module').then( m => m.RegistryPageModule)
   },
+ // TODO ENTERO
+  {
+    path: 'game',
+    loadChildren: () => import('./pages/game/game.module').then( m => m.GamePageModule)
+  },
+  // TODO ENTERO
+  {
+    path: 'gallery',
+    loadChildren: () => import('./pages/gallery/gallery.module').then( m => m.GalleryModule)
+  },
+   // TODO ENTERO
   {
     path: 'game',
     loadChildren: () => import('./pages/game/game.module').then( m => m.GamePageModule)
   },
   {
+    path: 'shop',
+    loadChildren: () => import('./pages/shop/shop.module').then( m => m.ShopModule)
+  },
+  {
     path: 'start-menu',
     loadChildren: () => import('./pages/start-menu/start-menu.module').then( m => m.StartMenuPageModule)
-  },
-  {
-    path: 'api-page1',
-    loadChildren: () => import('./pages/api-page1/api-page1.module').then( m => m.ApiPage1PageModule)
-  },
-  {
-    path: 'grid1',
-    loadChildren: () => import('./pages/grid1/grid1.module').then( m => m.Grid1PageModule)
   },
   {
     path: 'detail-girl',

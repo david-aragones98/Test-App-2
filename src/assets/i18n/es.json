@@ -1,4 +1,6 @@
 {
     "LOGIN.LOGIN.NOMBRE" : "Nombre",
-    "LOGIN.LOGIN.EMAIL" : "Email"
+    "LOGIN.LOGIN.EMAIL" : "Email",
+    "SHOP.SHOP.TITLE" : "Bienvenido Tienda!!",
+    "GALLERY.GALLERY.TITLE": "Galeria"
 }

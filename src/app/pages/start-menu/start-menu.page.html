@@ -17,11 +17,21 @@
   </ion-header>
   <ion-list>
 
-
-
-  <ion-card>
-    ¿ Que es lo 1º que vemos aqui?
-  </ion-card>
  
+  <ion-card (click)="goToGallery()">
+     Galeria
+  </ion-card>
+
+  <ion-card  (click)="goToShop()" ><!-- -->
+     Tienda
+  </ion-card>
+
+
+  <ion-card (click)="goToMinigame()" ><!--   -->
+     Minijuego
+  </ion-card>
+
+
+
   </ion-list>
-</ion-content>..
+</ion-content>

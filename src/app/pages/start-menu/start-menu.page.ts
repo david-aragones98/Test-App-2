@@ -8,23 +8,27 @@ import { Router } from '@angular/router';
 })
 export class StartMenuPage implements OnInit {
 
+  ngOnInit() { }
+
   constructor(private router: Router) { }
 
   goToLogin() {
     this.router.navigate(['login']);
   }
-  goToGame() {
-    this.router.navigate(['game']);
-  }
-  goToApiRest() {
-    this.router.navigate(['api-page1']);
-  }
-  goToGrid1() {
-    this.router.navigate(['grid1']);
+
+
+  goToGallery() {
+    this.router.navigate(['gallery']);
   }
 
-  ngOnInit() {
+  goToShop() {
+    this.router.navigate(['shop']);
   }
+  goToMinigame() {
+    this.router.navigate(['game']);
+  }
+
+
 
 }
 
