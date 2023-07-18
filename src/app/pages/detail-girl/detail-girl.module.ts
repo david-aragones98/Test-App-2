@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { Grid1PageRoutingModule } from './grid1-routing.module';
-import { Grid1Page } from './grid1.page';
+
+import { DetailGirlPageRoutingModule } from './detail-girl-routing.module';
+
+import { DetailGirlPage } from './detail-girl.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Grid1PageRoutingModule
+    DetailGirlPageRoutingModule
   ],
-  declarations: [Grid1Page]
+  declarations: [DetailGirlPage]
 })
-export class Grid1PageModule {}
+export class DetailGirlPageModule {}

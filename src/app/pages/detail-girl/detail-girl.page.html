@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons (click)="goToGrid1()" slot="start">
+      <ion-button fill="outline" color="primary">
+        <ion-icon name="apps-outline"></ion-icon>
+        Atras
+      </ion-button>
+      <ion-title class="ion-text-center">Details</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img [src]="image.url"></ion-img>
+  <ion-label>{{ image.title }}</ion-label>
+ </ion-content>
