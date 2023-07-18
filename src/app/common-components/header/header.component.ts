@@ -18,6 +18,7 @@ export class HeaderComponent  implements OnInit {
 
   changeLanguage() {
     this.translate.use(this.selectedLanguage);
+    debugger;
   }
 
 }

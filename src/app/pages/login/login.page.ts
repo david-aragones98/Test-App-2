@@ -8,6 +8,9 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
+  ngOnInit() {
+  }
+
   constructor(private router: Router) { }
 
   goToRegistry() {
@@ -20,7 +23,6 @@ export class LoginPage implements OnInit {
     this.router.navigate(['start-menu']);
   }
 
-  ngOnInit() {
-  }
+
 
 }
