@@ -11,6 +11,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CommonComponentsModule } from './common-components/common-components-module';
 import { LoginPageModule } from './pages/login/login.module';
+import { HeaderModule } from './common-components/header/header.module';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -33,7 +34,8 @@ export function createTranslateLoader(http: HttpClient) {
       }
     }),
     CommonComponentsModule,
-    LoginPageModule
+    LoginPageModule,
+    HeaderModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

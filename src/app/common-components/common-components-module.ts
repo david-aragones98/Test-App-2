@@ -11,7 +11,6 @@ import { IonicModule } from '@ionic/angular';
   declarations: [
     LoadingComponent,
     GoBackComponent,
-    HeaderComponent,
     FooterComponent,
     ButtonComponent
   ],

@@ -5,35 +5,27 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <img alt="Silhouette of mountains" src="https://png.pngtree.com/thumb_back/fh260/background/20211223/pngtree-minimalism-minimalist-landscape-artist-artwork-digital-art-hd-bear-wallpaper-image_934122.jpg" />
-    <ion-card-header>
-      <ion-card-title>¿Eres un artista casual o experto?</ion-card-title>
-        </ion-card-header>
-    <ion-card-content>
-      <ion-radio-group value="tipo de artista">
-        <ion-radio label-placement="end" value="Casual">Casual</ion-radio><br />
-        <ion-radio label-placement="end" value="Experto">Experto</ion-radio><br />
-           </ion-radio-group>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-item>
-      <ion-input label="Correo Electronico" type="email" placeholder="placeholder@gmail.com"></ion-input>
+  <ion-card class="register-card">
+    <ion-item class="input-item">
+      <ion-label position="floating" class="input-label">Correo Electrónico</ion-label>
+      <ion-input type="email" placeholder="placeholder@gmail.com" class="input-field"></ion-input>
     </ion-item>
   </ion-card>
-  <ion-card>
-    <ion-item>
-      <ion-input label="Contraseña" type="password" placeholder=""></ion-input>
+  <ion-card class="register-card">
+    <ion-item class="input-item">
+      <ion-label position="floating" class="input-label">Contraseña</ion-label>
+      <ion-input type="password" placeholder="" class="input-field"></ion-input>
     </ion-item>
-    <ion-item>
-      <ion-input label="Confirma tu contraseña" type="password" placeholder=""></ion-input>
+    <ion-item class="input-item">
+      <ion-label position="floating" class="input-label">Confirma tu contraseña</ion-label>
+      <ion-input type="password" placeholder="" class="input-field"></ion-input>
     </ion-item>
   </ion-card>
-  <ion-card>
-      <ion-item>
-        <ion-input label="Numero de telefono" type="number" placeholder="000 00 00 00"></ion-input>
-      </ion-item>
+  <ion-card class="register-card">
+    <ion-item class="input-item">
+      <ion-label position="floating" class="input-label">Número de Teléfono</ion-label>
+      <ion-input type="tel" placeholder="000 00 00 00" class="input-field"></ion-input>
+    </ion-item>
   </ion-card>
-  <ion-button (click)="goToLogin()" expand="full">REGISTRARSE</ion-button>
+  <ion-button (click)="goToLogin()" expand="full" class="register-button">REGISTRARSE</ion-button>
 </ion-content>
