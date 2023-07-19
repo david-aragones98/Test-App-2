@@ -1,7 +1,7 @@
 <ion-content>
   <ion-header>
     <ion-toolbar>
-      <ion-buttons (click)="goToLogin()" slot="start">
+      <!-- <ion-buttons (click)="goToLogin()" slot="start">
         <ion-button fill="outline" color="primary">
           <ion-icon name="newspaper-outline"></ion-icon>
           Menu
@@ -12,26 +12,31 @@
       <ion-button>
         <ion-icon slot="icon-only" name="notifications"></ion-icon>
         <ion-badge color="danger">3</ion-badge>
-      </ion-button>
+      </ion-button> -->
     </ion-toolbar>
   </ion-header>
   <ion-list>
 
- 
-  <ion-card (click)="goToGallery()">
-     Galeria
-  </ion-card>
+    <ion-card (click)="goToGallery()">
+      <ion-card-content>
+        <ion-icon name="images"></ion-icon>
+        <h2>Galeria</h2>
+      </ion-card-content>
+    </ion-card>
 
-  <ion-card  (click)="goToShop()" ><!-- -->
-     Tienda
-  </ion-card>
+    <ion-card (click)="goToShop()">
+      <ion-card-content>
+        <ion-icon name="cart"></ion-icon>
+        <h2>Tienda</h2>
+      </ion-card-content>
+    </ion-card>
 
-
-  <ion-card (click)="goToMinigame()" ><!--   -->
-     Minijuego
-  </ion-card>
-
-
+    <ion-card (click)="goToMinigame()">
+      <ion-card-content>
+        <ion-icon name="game-controller"></ion-icon>
+        <h2>Minijuego</h2>
+      </ion-card-content>
+    </ion-card>
 
   </ion-list>
 </ion-content>

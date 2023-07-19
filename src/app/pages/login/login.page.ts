@@ -13,11 +13,11 @@ export class LoginPage implements OnInit {
 
   constructor(private router: Router) { }
 
-  goToRegistry() {
+  signUp() {
     this.router.navigate(['registry']);
   }
-  goToStartMenu() {
   
+  login() {
     this.router.navigate(['start-menu']);
   }
 

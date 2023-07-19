@@ -25,6 +25,10 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+
+@import "./theme/common.scss";
+@import "./theme/variables.scss";
+
 .flexcenter{
     display: flex;
     justify-content: center;

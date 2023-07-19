@@ -2,5 +2,9 @@
     "LOGIN.LOGIN.NOMBRE" : "Nombre",
     "LOGIN.LOGIN.EMAIL" : "Email",
     "SHOP.SHOP.TITLE" : "Bienvenido Tienda!!",
-    "GALLERY.GALLERY.TITLE": "Galeria"
+    "GALLERY.GALLERY.TITLE": "Galeria",
+    "BTN.LOGIN":  "Iniciar sesión",
+    "BTN.PASSWORD": "Contraseña",
+    "BTN.REGISTER": "Registrarse",
+    "BTN.SUBMIT": "Enviar"
 }

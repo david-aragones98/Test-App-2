@@ -2,25 +2,20 @@
   <div class="flexcenter">
     <ion-card class="login-card">
       <ion-card-header class="login-header">
-        <ion-card-title class="app-title"></ion-card-title>
+        <ion-card-title class="app-title">MyApp</ion-card-title>
       </ion-card-header>
     
       <ion-card-content>
         <ion-item class="input-item">
           <ion-label position="floating" class="input-label">{{ 'LOGIN.LOGIN.NOMBRE' | translate }}</ion-label>
-          <ion-input placeholder="Dime cómo te llamas" class="input-field"></ion-input>
+          <ion-input placeholder="" class="input-field"></ion-input>
         </ion-item>
         <ion-item class="input-item">
-          <ion-label position="floating" class="input-label">Correo Electrónico</ion-label>
-          <ion-input type="email" placeholder="placeholder@gmail.com" class="input-field"></ion-input>
+          <ion-label position="floating" class="input-label">{{'LOGIN.LOGIN.EMAIL' | translate }}</ion-label>
+          <ion-input type="email" placeholder="" class="input-field"></ion-input>
         </ion-item>
-        <ion-item class="input-item">
-          <ion-label position="floating" class="input-label">Número de Teléfono</ion-label>
-          <ion-input type="tel" placeholder="000 00 00 00" class="input-field"></ion-input>
-        </ion-item>
-        <ion-button size="small" color="warning" fill="outline" expand="block" class="forgot-password-button">Olvidé mi contraseña</ion-button>
-        <ion-button (click)="goToStartMenu()" size="large" expand="block" class="login-button">INICIAR SESIÓN</ion-button>
-        <ion-button (click)="goToRegistry()" color="success" fill="outline" expand="block" class="register-button">Registrarse</ion-button>
+        <app-button button-role="login" [textKey]="'BTN.LOGIN'" (click)="login()"></app-button>
+        <app-button button-role="register" [textKey]="'BTN.REGISTER'" (click)="signUp()"></app-button>
       </ion-card-content>
     </ion-card>
   </div>

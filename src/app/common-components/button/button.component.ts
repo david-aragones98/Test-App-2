@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-button',
@@ -6,11 +7,18 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent  implements OnInit {
-  @Input() text: string = '';
+  @Input() textKey: string = '';
   @Input() styles: any; 
 
-  constructor() { }
+  constructor(
+    private translate: TranslateService
+  ) { }
 
   ngOnInit() {}
+
+
+  getTranslatedText(): string {
+    return this.translate.instant(this.textKey);
+  }
 
 }

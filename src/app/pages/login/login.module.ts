@@ -5,6 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { LoginPageRoutingModule } from './login-routing.module';
 import { LoginPage } from './login.page';
 import { TranslateModule } from '@ngx-translate/core';
+import { CommonComponentsModule } from 'src/app/common-components/common-components-module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { TranslateModule } from '@ngx-translate/core';
     FormsModule,
     IonicModule,
     LoginPageRoutingModule,
-    TranslateModule
+    TranslateModule,
+    CommonComponentsModule
   ],
   declarations: [LoginPage],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

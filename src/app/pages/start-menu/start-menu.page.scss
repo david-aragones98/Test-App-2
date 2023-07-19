@@ -1,0 +1,42 @@
+ion-content {
+    --ion-background-color: #f9f9f9; /* Use your preferred color */
+  }
+  
+  /* Center the content horizontally */
+  ion-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Styling for Ion cards */
+  ion-card {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #fff; /* Use your preferred color */
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  ion-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Custom styling for Ion buttons and icons */
+  ion-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  ion-button {
+    margin-right: 8px;
+    font-weight: bold;
+  }
+  
+  ion-icon {
+    margin-right: 4px;
+  }
