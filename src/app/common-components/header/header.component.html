@@ -1,15 +1,32 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-     ....
-    </ion-title>
-    <ion-buttons slot="end">
-       <ion-select [(ngModel)]="selectedLanguage" (ionChange)="changeLanguage()"> 
-         <ion-select-option value="en">English</ion-select-option>
-        <ion-select-option value="es">Spanish</ion-select-option> 
-    </ion-select> 
+    <ion-buttons slot="start">
+      <ion-icon name="user"></ion-icon>
     </ion-buttons>
-    Settings
-    <ion-icon name="user"></ion-icon>
+
+    <ion-buttons slot="end">
+      <ion-select [(ngModel)]="selectedLanguage" (ionChange)="changeLanguage()">
+        <ion-select-option value="en">English</ion-select-option>
+        <ion-select-option value="es">Spanish</ion-select-option>
+      </ion-select>
+
+      <ion-button fill="clear" (click)="openSettings()">
+        <ion-icon name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <!-- Navigation Toolbar -->
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="segment" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="gallery">
+        Gallery
+      </ion-segment-button>
+      <ion-segment-button value="shop">
+        Shop
+      </ion-segment-button>
+      <ion-segment-button value="minigame">
+        Minigame
+      </ion-segment-button>
+    </ion-segment>
   </ion-toolbar>
 </ion-header>

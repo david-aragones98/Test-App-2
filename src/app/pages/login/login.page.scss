@@ -1,63 +1,31 @@
-/* Center content vertically */
-.flexcenter {
+ion-card-content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100%;
 }
 
-/* Login card styles */
-.login-card {
+.input-field-centered {
   width: 80%;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #2c3e50; /* Color del texto */
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-/* Login header styles */
-.login-header {
-  background-color: #2196f3; /* Use your preferred color */
-  border-radius: 10px 10px 0 0;
+.login-button {
+  --background: #d32f2f; /* Color de fondo deseado */
+  --color: #ffffff; /* Color del texto en el botón */
+  --border-radius: 20px;
+  margin-top: 20px;
 }
 
-/* App title styles */
-.app-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
-}
-
-/* Input item styles */
-.input-item {
-  margin-bottom: 16px;
-}
-
-/* Input label styles */
-.input-label {
-  color: #777;
-}
-
-/* Input field styles */
-.input-field {
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
-/* Login and Register buttons styles */
-ion-button {
-  border-radius: 8px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* Styles for specific login and register buttons (customize as needed) */
-ion-button[button-role='login'] {
-  background-color: #ff6f00; /* Use your preferred color */
-  color: #fff;
-}
-
-ion-button[button-role='register'] {
-  background-color: #4caf50; /* Use your preferred color */
-  color: #fff;
+.register-button {
+  --background: #d32f2f; /* Color de fondo deseado */
+  --color: #ffffff; /* Color del texto en el botón */
+  --border-radius: 20px;
+  margin-top: 10px;
 }
