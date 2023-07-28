@@ -24,3 +24,63 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+/*$text: #ffffff;
+$background: #242424;
+$primary: #3a5199;
+$secondary: #826bc7;
+$accent: #ffc266;*/
+
+.contentPantallasRegistro {
+  --offset-bottom: 0;
+  --ion-background-color: #232323;
+}
+
+.full-height-container {
+  height: calc(100% - var(--offset-bottom, 0px) - var(--ion-safe-area-top));
+}
+
+.tituloGrande {
+  font-size: 58px;
+  font-weight: bold;
+}
+
+.small-subtitle {
+  font-size: 18px;
+  color: rgb(199, 199, 199);
+}
+
+.textoPeque {
+  font-size: 16px;
+  color: gray;
+}
+
+.custom-content ion-item {
+  margin-bottom: 10px; /* espacio entre cajas de input */
+}
+
+ion-button {
+  margin-top: 20px; /* espacio entre cajas de input y el boton */
+}
+
+.invisible-header {
+    height: 23vh; /*modificar esto para crear mas o menos espaacio*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;}
+
+.cajas-estrechas{
+    max-width: 90%; /* modificar anchura */
+  margin-left: auto; 
+  margin-right: auto;
+  --background: #444444;
+}
+
+.botones-estrechos{
+    max-width: 90%; /* modificar anchura */
+  margin-left: auto; 
+  margin-right: auto;
+  --background: #7F60FF;
+}
+
