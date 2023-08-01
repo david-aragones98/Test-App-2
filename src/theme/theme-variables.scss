@@ -8,5 +8,23 @@ $color-danger: #dc3545;
 $color-warning: #ffc107;
 $color-info: #17a2b8;
 
-// Fuente
-$font-family-base: 'Nunito', sans-serif;
+/*
+ HE TENDO QUE SACARLAS DE AQUI. ME ESTAN DANDO GUERRA. TIENES UN EJEMPLO DE IMPLEMENTACION EN EL CSS DEL HEADER COMPONENT
+*/
+
+// $color-elegant-grey: #333333;
+// $color-white: #ffff;
+
+
+
+
+/* Global CSS variables for fonts */
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-nunito: 'Nunito', sans-serif;
+    --font-source-sans-pro: 'Source Sans Pro', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+  }

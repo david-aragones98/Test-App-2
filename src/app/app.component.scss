@@ -117,3 +117,9 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+
+app-header {
+  background-color: #f1f1f1; // Color gris claro elegante (puedes ajustar el valor según tu preferencia)
+  color: #333; // Color de texto (puedes ajustar el valor según tu preferencia)
+}

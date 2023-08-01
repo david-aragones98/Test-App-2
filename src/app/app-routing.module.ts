@@ -31,10 +31,10 @@ const routes: Routes = [
     path: 'start-menu',
     loadChildren: () => import('./pages/start-menu/start-menu.module').then( m => m.StartMenuPageModule)
   },
-  // {
-  //   path: 'loot-box',
-  //   loadChildren: () => import('./pages/loot-box/loot-box.module').then( m => m.LootBoxModule)
-  // },
+  {
+    path: 'loot-box',
+    loadChildren: () => import('./pages/loot-box/loot-box.module').then( m => m.LootBoxModule)
+  },
   {
     path: 'shop',
     loadChildren: () => import('./pages/shop/shop.module').then( m => m.ShopModule)
