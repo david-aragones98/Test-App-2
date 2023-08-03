@@ -1,38 +1,44 @@
-import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import * as lottie from 'lottie-web';
 
 @Component({
   selector: 'app-loot-box',
   templateUrl: './loot-box.component.html',
   styleUrls: ['./loot-box.component.scss'],
-  animations: [
-    trigger('abrirCerrarCofre', [
-      state('abierto', style({
-        transform: 'rotateX(-60deg)',
-      })),
-      state('cerrado', style({
-        transform: 'rotateX(0deg)',
-      })),
-      transition('abierto => cerrado', animate('500ms ease-out')),
-      transition('cerrado => abierto', animate('500ms ease-in')),
-    ]),
-  ],
 })
-export class LootBoxComponent  implements OnInit {
-  isOpen: boolean = false;
-  estadoCofre: 'abierto' | 'cerrado' = 'cerrado';
+export class LootBoxComponent implements OnInit {
+  private animation: lottie.AnimationItem | null = null;
+  btnChest = {
+    // 'background-color': 'red',
+    //  'color': '#fff',
+    // 'border-radius': '5px',
+  }
 
-  toggleCofre() {
-    this.estadoCofre = this.estadoCofre === 'abierto' ? 'cerrado' : 'abierto';
+  constructor() {}
+
+  ngOnInit() {
+    const container = document.getElementById('lottie-container');
+    if (container) {
+      this.animation = lottie.default.loadAnimation({
+        container: container,
+        path: '../assets/animations/treasure-chest.json', // Reemplaza con la ruta del archivo JSON de la animación
+        renderer: 'svg', // Puedes elegir el renderizador (svg, canvas, html). Por defecto, es 'svg'.
+        loop: true, // Reproducir en bucle. Por defecto, es true.
+        autoplay: false, // Reproducir automáticamente. Por defecto, es true.
+      });
+    }
   }
 
 
-  openChest() {
-    this.isOpen = !this.isOpen;
+  openTreasureChest() {
+    this.animation?.play();
+  }
+  
+  closeTreasureChest() {
+    this.animation?.stop();
   }
 
-  constructor() { }
-
-  ngOnInit() {}
 
 }
+
+

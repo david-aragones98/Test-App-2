@@ -8,11 +8,13 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ButtonComponent  implements OnInit {
   @Input() textKey: string = '';
-  @Input() styles: any; 
+  @Input() styles: { [key: string]: string } ;
 
   constructor(
     private translate: TranslateService
-  ) { }
+  ) { 
+    this.styles = {};
+  }
 
   ngOnInit() {}
 

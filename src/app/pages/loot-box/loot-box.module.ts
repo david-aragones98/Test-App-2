@@ -5,6 +5,7 @@ import { LootBoxComponent } from './loot-box.component';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { TranslateModule } from '@ngx-translate/core';
+import { CommonComponentsModule } from 'src/app/common-components/common-components-module';
 
 @NgModule({
   declarations: [ LootBoxComponent],
@@ -14,7 +15,8 @@ import { TranslateModule } from '@ngx-translate/core';
     IonicModule,
     FormsModule,
     TranslateModule,
-    LootBoxRoutingModule
+    LootBoxRoutingModule,
+    CommonComponentsModule
   ],
   exports: [
     LootBoxComponent

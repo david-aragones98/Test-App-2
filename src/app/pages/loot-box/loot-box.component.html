@@ -1,7 +1,12 @@
-<ion-content class="app-background">
-  <div class="flexcenter">
-    <ion-card class="treasure-chest" (click)="openChest()">
-      <img src="" class="chest-image">
-    </ion-card>
-  </div>
+<ion-content
+  [fullscreen]="true"
+  class="ion-align-items-center ion-justify-content-center"
+>
+  <div id="lottie-container"></div>
+  <div class="btn-container">
+  <app-button [textKey]="'Open Chest'" class ="custom-button" (click)="openTreasureChest()" ></app-button>
+  <app-button [textKey]="'Close Chest'" (click)="closeTreasureChest()" class="btn-chest"></app-button>
+</div>
 </ion-content>
+
+
