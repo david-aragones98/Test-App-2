@@ -15,6 +15,26 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./paginaRegistro/register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'user-creation',
+    loadChildren: () => import('./paginaRegistro/user-creation/user-creation.module').then( m => m.UserCreationPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./paginaRegistro/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'email-confirmation',
+    loadChildren: () => import('./paginaRegistro/email-confirmation/email-confirmation.module').then( m => m.EmailConfirmationPageModule)
+  },
+  {
+    path: 'error-page1',
+    loadChildren: () => import('./paginaRegistro/error-page1/error-page1.module').then( m => m.ErrorPage1PageModule)
+  },
+  {
+    path: 'main-menu',
+    loadChildren: () => import('./main-menu/main-menu.module').then( m => m.MainMenuPageModule)
+  },
 ];
 
 @NgModule({
