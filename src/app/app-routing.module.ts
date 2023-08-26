@@ -16,6 +16,20 @@ const routes: Routes = [
     path: 'registry',
     loadChildren: () => import('./pages/registry/registry.module').then( m => m.RegistryPageModule)
   },
+
+  {
+    path: 'user-creation',
+    loadChildren: () => import('./pages/user-creation/user-creation.module').then( m => m.UserCreationModule)
+  },
+  {
+    path: 'email-confirmation',
+    loadChildren: () => import('./pages/email-confirmation/email-confirmation.module').then( m => m.EmailConfirmationModule)
+  },
+  {
+    path: 'error-page',
+    loadChildren: () => import('./pages/error-page/error-page.module').then( m => m.ErrorModule)
+  },
+
  // TODO ENTERO
   {
     path: 'game',
@@ -42,6 +56,10 @@ const routes: Routes = [
   {
     path: 'detail-girl',
     loadChildren: () => import('./pages/detail-girl/detail-girl.module').then( m => m.DetailGirlPageModule)
+  },
+  {
+    path: 'main-menu',
+    loadChildren: () => import('./pages/main-menu/main-menu.module').then( m => m.MainMenuModule)
   }
 ];
 
