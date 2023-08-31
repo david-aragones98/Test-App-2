@@ -51,6 +51,9 @@ export class HeaderComponent  implements OnInit {
           console.log('Navigate to Minigame');
           this.router.navigate(['loot-box']);
           break;
+          case 'registry':
+            this.router.navigate(['registry']);
+            break;
       default:
         break;
     }

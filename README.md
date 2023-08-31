@@ -14,3 +14,9 @@ Instrucciones: Loading simula 5 segundos de carga
 - Cuando te bajes la rama, hazte un npm install. Hay dependencias nuevas
 
 
+
+# PARA GUIO 
+
+- Generar los servicios y componentes con npx 
+
+

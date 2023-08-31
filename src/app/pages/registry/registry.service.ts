@@ -6,22 +6,15 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class RegistryService {
-  public REGISTRY_USER_URL= ''
+  public REGISTRY_USER_URL= 'http://localhost:3002/user/register-email';
 
   constructor(private http: HttpClient) {}
 
-/*    //Version para limitarlo a las 10 primeras entrys
-  getImages() {
-    return this.http.get<any[]>(this.apiUrl).pipe(
-      map((data: any[]) => data.slice(0, 10))
-    );
+
+  createRegister(body: string): Observable<any> {
+        return this.http.post<any>(this.REGISTRY_USER_URL, body);
   }
-  */
- /*
-  getImages() {
-    return this.http.get<any[]>(this.apiUrl);
-  }
-  */
+
 
   
 }
