@@ -6,6 +6,7 @@ import { LoginPageRoutingModule } from './login-routing.module';
 import { LoginPage } from './login.page';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonComponentsModule } from 'src/app/common-components/common-components-module';
+import { MainMenuModule } from '../main-menu/main-menu.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CommonComponentsModule } from 'src/app/common-components/common-compone
     IonicModule,
     LoginPageRoutingModule,
     TranslateModule,
-    CommonComponentsModule
+    CommonComponentsModule,
+    MainMenuModule
   ],
   declarations: [LoginPage],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

@@ -7,6 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainMenuComponent  implements OnInit {
 
+  public menuItems = [
+    {
+      title: 'Registry',
+      icon: 'home',
+      path: '/registry'
+    },
+    {
+      title: 'Gallery',
+      icon: 'home',
+      path: '/gallery'
+    },
+    {
+      title: 'Loot Box',
+      icon: 'home',
+      path: '/loot-box'
+    }
+  ]
+
   constructor() { }
 
   ngOnInit() {}

@@ -6,24 +6,17 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class RegistryService {
-  public REGISTRY_USER_URL= 'http://localhost:3002/user/register-email';
- public COMPLETE_REGISTRY_USER_URL='http://localhost:3002/user/register-username-password';
+  private baseUrl = 'http://localhost:3002/user';
 
   constructor(private http: HttpClient) {}
 
-
   createRegister(body: any): Observable<any> {
-        return this.http.post<any>(this.REGISTRY_USER_URL, body);
+    const url = `${this.baseUrl}/register-email`;
+    return this.http.post<any>(url, body);
   }
 
   completeRegister(body: any): Observable<any> {
-    return this.http.post<any>(this.COMPLETE_REGISTRY_USER_URL, body);
+    const url = `${this.baseUrl}/register-username-password`;
+    return this.http.post<any>(url, body);
+  }
 }
-
-
-
-
-
-  
-}
-

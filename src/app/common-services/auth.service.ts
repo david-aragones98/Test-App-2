@@ -4,7 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 
-
 /**
  *  GETTER AND SETTER FOR TOKEN 
  */
