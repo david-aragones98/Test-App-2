@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { RegistryService } from './registry.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from 'src/app/common-services/auth.service';
+import { switchMap, catchError } from 'rxjs/operators';
+import { throwError } from 'rxjs';
 
 @Component({
   selector: 'app-registry',
@@ -11,10 +14,12 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class RegistryPage implements OnInit {
   public  registerForm!: FormGroup;
 
+
   constructor(
     private router: Router,
     private _registerSrv: RegistryService,
-    private fb : FormBuilder
+    private fb : FormBuilder,
+    private _authSrv: AuthService
     ) { }
 
   goToLogin() {
@@ -27,18 +32,38 @@ export class RegistryPage implements OnInit {
 
   public initForm() {
        this.registerForm = this.fb.group({
-        email: ['', Validators.required],
+        email: [null, Validators.required],
+        username: [null, Validators.required],
+        password: [null, Validators.required],
       });
   }
 
 
   onSubmit() {
-    if (this.registerForm?.valid) {
-      this._registerSrv.createRegister(this.registerForm?.value).subscribe((res: any) => {
-        if(res) {
-          console.log('res-register::', res);
+    const emailValue = this.registerForm.controls['email'].value;
+    if (emailValue) {
+     const email = {
+        email: emailValue
+     }
+      this._registerSrv.createRegister(email)     
+      .subscribe((res: any) => {
+        const confirmationToken = res.token;
+      this._authSrv.setAuthToken(confirmationToken);
+      const completeRegister = this.registerForm.value; 
+      completeRegister.confirmationToken = confirmationToken;
+      this._registerSrv.completeRegister(completeRegister).subscribe((secondRes: any) => {
+        if(secondRes) {
+          console.log('secondRes::', secondRes);
+          this.goToLogin();
         }
-    });
+      })
+      });
+      
+      
+  
+      
+      
+ 
     }
   }
 

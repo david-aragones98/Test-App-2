@@ -19,4 +19,10 @@ Instrucciones: Loading simula 5 segundos de carga
 
 - Generar los servicios y componentes con npx 
 
+# PARA SEMANA 1-SEPT - 8 SEPT
+- Arreglar el OnSubmit del registry.
+- Enganchar todos los servicios de registry y login
+- Crear un error handler
+- Crear una cabecera de user settings donde tengo el cambio de idioma
+
 
