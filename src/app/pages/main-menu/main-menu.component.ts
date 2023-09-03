@@ -29,4 +29,10 @@ export class MainMenuComponent  implements OnInit {
 
   ngOnInit() {}
 
+
+
+  setTitle(title: string) {
+
+  }
+
 }
