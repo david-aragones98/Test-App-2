@@ -14,7 +14,6 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CommonComponentsModule } from './common-components/common-components-module';
 import { LoginPageModule } from './pages/login/login.module';
-// import { HeaderModule } from './common-components/header/header.module';
 import { AuthInterceptor } from './common-services/auth-interceptor.service';
 import { MainMenuModule } from './pages/main-menu/main-menu.module';
 

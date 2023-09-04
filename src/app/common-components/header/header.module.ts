@@ -4,10 +4,12 @@ import { IonicModule } from '@ionic/angular';
 import { HeaderComponent } from './header.component';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [HeaderComponent],
-  imports: [CommonModule, IonicModule, FormsModule, TranslateModule],
+  imports: [CommonModule, IonicModule, 
+    FormsModule, RouterModule, TranslateModule],
   exports: [HeaderComponent],
 })
 export class HeaderModule {}

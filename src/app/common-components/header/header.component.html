@@ -1,30 +1,15 @@
-<!-- 
-  <ion-header>
-  <ion-toolbar class="settings">
+<ion-header class="mobile-header">
+  <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-icon name="user"></ion-icon>
+      <ion-menu-button menu="myMenu"></ion-menu-button>
     </ion-buttons>
-
-
+    <ion-title>{{ title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="cart"></ion-icon> <!--- Este icono será de tipo user  -->
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
-
 </ion-header>
-
-<ion-content>
-
-
-</ion-content> -->
-
-
-
-
-
-<!-- <ion-buttons slot="end">
-  <ion-select [(ngModel)]="selectedLanguage" (ionChange)="changeLanguage()">
-    <ion-select-option class="lang-select" value="en">English</ion-select-option>
-    <ion-select-option class="lang-select" value="es">Spanish</ion-select-option>
-  </ion-select>
-
-</ion-buttons> -->
 
 

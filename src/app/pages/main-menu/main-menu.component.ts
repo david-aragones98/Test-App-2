@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-menu.component.scss'],
 })
 export class MainMenuComponent  implements OnInit {
+  title: string = '';
 
   public menuItems = [
     {
@@ -32,7 +33,7 @@ export class MainMenuComponent  implements OnInit {
 
 
   setTitle(title: string) {
-
+     this.title = title;
   }
 
 }

@@ -5,6 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { MainMenuRoutingModule } from './main-menu-routing.module';
+import { HeaderModule } from 'src/app/common-components/header/header.module';
 
 @NgModule({
   declarations: [MainMenuComponent],
@@ -13,6 +14,7 @@ import { MainMenuRoutingModule } from './main-menu-routing.module';
     IonicModule,
     FormsModule,
     TranslateModule,
+    HeaderModule,
     MainMenuRoutingModule,
   ],
   exports: [MainMenuComponent],
