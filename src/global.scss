@@ -40,13 +40,6 @@
     margin-top: 20px; /* espacio entre cajas de input y el boton */
   }
   
-  .invisible-header {
-      height: 23vh; /*modificar esto para crear mas o menos espacio*/
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      visibility: hidden;}
-  
   .cajas-estrechas{
       max-width: 90%; /* modificar anchura */
     margin-left: auto; 
@@ -110,23 +103,8 @@
   ion-button {
     margin-top: 20px; /* espacio entre cajas de input y el boton */
   }
-  
-  .invisible-header {
-    height: 23vh; /*modificar esto para crear mas o menos espaacio*/
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    visibility: hidden;
-  }
-  
-  .invisible-header2 {
-    height: 3vh; /*modificar esto para crear mas o menos espaacio*/
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    visibility: hidden;
-  }
-  
+
+
   .cajas-estrechas {
     max-width: 90%; /* modificar anchura */
     margin-left: auto;

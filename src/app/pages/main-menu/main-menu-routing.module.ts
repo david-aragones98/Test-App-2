@@ -18,7 +18,7 @@ const routes: Routes = [
   {
     path: 'registry',
     loadChildren: () => import('../registry/registry.module').then( m => m.RegistryPageModule)
-  },
+  }
     ]
   }
 ];

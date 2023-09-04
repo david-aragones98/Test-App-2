@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-menu',
@@ -11,7 +12,7 @@ export class MainMenuComponent  implements OnInit {
   public menuItems = [
     {
       title: 'Registry',
-      icon: 'home',
+      icon: 'person-add',
       path: '/registry'
     },
     {
@@ -23,10 +24,12 @@ export class MainMenuComponent  implements OnInit {
       title: 'Loot Box',
       icon: 'home',
       path: '/loot-box'
-    }
+    },
   ]
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {}
 
@@ -35,5 +38,11 @@ export class MainMenuComponent  implements OnInit {
   setTitle(title: string) {
      this.title = title;
   }
+
+
+  // navigateToUserSettings() {
+  //   this.router.navigate(['user-settings'])
+  // }
+
 
 }
