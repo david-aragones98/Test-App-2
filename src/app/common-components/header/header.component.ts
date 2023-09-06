@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -9,6 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent  implements OnInit {
   @Input() title!: string; 
+  isNavigated: boolean = false;
   
   public selectedLanguage: string = 'en';
 
@@ -16,7 +17,14 @@ export class HeaderComponent  implements OnInit {
   constructor(
      private translate: TranslateService,
      private router: Router
-  ) { }
+  ) { 
+
+    this.router.events.subscribe((event) => {
+      if(event instanceof NavigationEnd) {
+        this.isNavigated = true;
+      }
+    })
+  }
 
   ngOnInit() {}
 
