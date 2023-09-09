@@ -40,9 +40,9 @@ export class MainMenuComponent  implements OnInit {
   }
 
 
-  // navigateToUserSettings() {
-  //   this.router.navigate(['user-settings'])
-  // }
+  navigateToUserSettings() {
+    this.router.navigate(['user-settings'])
+  }
 
 
 }

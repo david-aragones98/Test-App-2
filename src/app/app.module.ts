@@ -41,7 +41,7 @@ export function createTranslateLoader(http: HttpClient) {
     }),
     CommonComponentsModule,
     LoginPageModule,
-    MainMenuModule,
+    // MainMenuModule,
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
