@@ -41,7 +41,7 @@ export class MainMenuComponent  implements OnInit {
 
 
   navigateToUserSettings() {
-    this.router.navigate(['user-settings'])
+    this.router.navigate(['user-settings']);
   }
 
 

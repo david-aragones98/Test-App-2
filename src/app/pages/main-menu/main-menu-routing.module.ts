@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'registry',
     loadChildren: () => import('../registry/registry.module').then( m => m.RegistryPageModule)
+  },
+  {
+    path: 'user-settings',
+    loadChildren: () => import('../user-settings/user-settings.module').then( m => m.UserSettingsModule)
   }
     ]
   }

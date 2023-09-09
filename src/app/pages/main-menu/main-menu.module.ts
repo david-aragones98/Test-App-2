@@ -5,7 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { MainMenuRoutingModule } from './main-menu-routing.module';
-import { HeaderModule } from 'src/app/common-components/header/header.module';
+// import { HeaderModule } from 'src/app/common-components/header/header.module';
 
 @NgModule({
   declarations: [MainMenuComponent],
@@ -14,7 +14,7 @@ import { HeaderModule } from 'src/app/common-components/header/header.module';
     IonicModule,
     FormsModule,
     TranslateModule,
-    HeaderModule,
+    // HeaderModule,
     MainMenuRoutingModule,
   ],
   exports: [MainMenuComponent],
